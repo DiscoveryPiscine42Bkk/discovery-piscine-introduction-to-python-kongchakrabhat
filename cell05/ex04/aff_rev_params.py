@@ -1,3 +1,3 @@
-import shlex
-user = input("")
-print("Number of parameters:", len(shlex,split(user)))
+import sys
+num_params = len (sys.argv) - 1
+print(num_params)
