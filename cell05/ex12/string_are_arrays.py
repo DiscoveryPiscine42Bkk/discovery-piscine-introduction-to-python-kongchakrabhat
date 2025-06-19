@@ -1,13 +1,11 @@
 import sys
-
-if len(sys.argv) != 2:
+args = sys.argv[1:]
+if len(args) != 1:
     print("none")
 else:
-    input_str = sys.argv[1]
-    z_count = input_str.count('z')
-
-    if zcount == 0:
-        print("none")
+    string = args[0]
+    count_z = string.count('z')
+    if count_z > 0:
+        print("z" * count_z)
     else:
-        for  in range(z_count):
-            print("z")
+        print("none")
